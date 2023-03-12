@@ -5,6 +5,7 @@ import { FiInstagram } from "react-icons/fi";
 import { FaDiscord } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -130,13 +131,13 @@ const Footer = () => {
               <p className="font-nunito text-[#A2A2A2] ">
                 Have a question? Email me at:
               </p>
-              <a
-                rel="noreferrer"
+              <Link
+                // rel="noreferrer"
                 href="mailto:shayanjamil500@.com"
                 className="font-raleway text-white text-lg"
               >
                 shayanjamil500@gmail.com
-              </a>
+              </Link>
             </div>
           </div>
           {/* Right */}
