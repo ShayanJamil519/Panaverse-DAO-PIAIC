@@ -111,13 +111,13 @@ const Footer = () => {
             <p className="font-nunito text-white ">
               &#169; Copyrighted and Designed by
             </p>
-            <a
+            <Link
               href="https://github.com/ShayanJamil519"
               target="_blank"
               className="no-underline text-[#145CEB] text-xl font-nunito font-semibold tracking-wide"
             >
               Shayan Jamil
-            </a>
+            </Link>
           </div>
           {/* Middle */}
           <div className="flex-[0.3] flex justify-start items-center gap-6">
