@@ -7,7 +7,7 @@ const Hero = () => {
       <div className=" bg-[#EDEEF3] w-full flex  before:bg-hero-blob  before:w-[3.45rem] before:h-48 before:object-contain before:top-40 before:relative ">
         {/* Left Container */}
         <div className="flex-[0.4] pt-16 pl-4 pr-10 relative after:bg-hero-arrow after:w-52 after:h-48 after:relative after:block after:object-contain after:top-[-12rem] after:left-[-5rem]">
-          <a href="#" className="text-[#145CEB] font-raleway text-lg">
+          <a href="/" className="text-[#145CEB] font-raleway text-lg">
             Discover your journey
           </a>
           <h1 className="font-raleway text-6xl my-6 tracking-[-1px] ">
