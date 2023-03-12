@@ -131,6 +131,7 @@ const Footer = () => {
                 Have a question? Email me at:
               </p>
               <a
+                rel="noreferrer"
                 href="mailto:shayanjamil500@.com"
                 className="font-raleway text-white text-lg"
               >
