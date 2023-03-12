@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { proudData } from "./data";
 
@@ -28,7 +29,14 @@ const ProudCard = ({ data }) => {
       style={{ backgroundColor: bgColor }}
       className="w-[22%] rounded-md mt-8 py-16 text-center text-white"
     >
-      <img src={imgUrl} alt={imgUrl} className="mx-auto mb-3" />
+      {/* <img src={imgUrl} alt={imgUrl} className="mx-auto mb-3" /> */}
+      <Image
+        width={60}
+        height={60}
+        src={imgUrl}
+        alt={imgUrl}
+        className="mx-auto mb-3"
+      />
       <h1 className="font-raleway text-4xl mb-1 tracking-[1px]">{num}</h1>
       <p className="font-nunito text-[#FFFFFFCC]">{text}</p>
     </div>

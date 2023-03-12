@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { eventsData } from "./data";
 
@@ -43,7 +44,9 @@ const Event = ({ event }) => {
         <div className="flex-[0.8]">
           <h3 className="font-raleway  mb-4 text-xl text-[#1A202C]">{name}</h3>
           <span className="inline-flex text-sm mr-10 font-nunito text-[#575757]">
-            <img
+            <Image
+              width={16}
+              height={16}
               src="/assets/engagement__time.png"
               alt="Time Logo"
               className="object-contain mr-1"
@@ -51,7 +54,9 @@ const Event = ({ event }) => {
             {time}
           </span>
           <span className="inline-flex text-sm font-nunito text-[#575757]">
-            <img
+            <Image
+              width={16}
+              height={16}
               src="/assets/engagement__location.png"
               alt="Location Logo"
               className="object-contain mr-1"
@@ -62,7 +67,12 @@ const Event = ({ event }) => {
         {/* Right Container */}
         <div className="flex-[0.2] flex justify-center items-center">
           <div className="p-4 rounded-md border-[#104ABC] border-[1px]">
-            <img src="/assets/engagement__arrow.png" alt="Goto Logo" />
+            <Image
+              width={16}
+              height={16}
+              src="/assets/engagement__arrow.png"
+              alt="Goto Logo"
+            />
           </div>
         </div>
       </div>
@@ -75,7 +85,9 @@ const Feedback = () => {
     <div className="flex-[0.5]">
       <h1 className="font-raleway text-4xl mb-14 ">Student's Feedback</h1>
       <div className="py-5 px-8 bg-white text-center">
-        <img
+        <Image
+          width={60}
+          height={60}
           src="/assets/engagement__quote.png"
           alt="Logo"
           className="mx-auto mb-4"
@@ -86,7 +98,9 @@ const Feedback = () => {
           I learned about decentralized systems and how they can be applied in
           creating immersive virtual worlds."
         </p>
-        <img
+        <Image
+          width={64}
+          height={64}
           src="/assets/engagement__me.png"
           alt="Profile Pic"
           className="w-16 h-16 object-contain rounded-full mx-auto mb-3"

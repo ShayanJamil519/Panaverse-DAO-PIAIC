@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
@@ -25,25 +26,45 @@ const Hero = () => {
         <div className="flex-[0.6]  pt-24 pl-20">
           <div className="flex">
             <div className="flex-[0.1] relative">
-              <img
+              <Image
+                width={200}
+                height={500}
+                src="/assets/hero__green__dots.png"
+                alt="Image"
+                className="absolute top-44 left-10"
+              />
+              {/* <img
                 src="/assets/hero__green__dots.png"
                 alt=""
                 className="absolute top-44 left-10"
-              />
+              /> */}
             </div>
             <div className=" mx-auto relative flex-[0.8] ">
-              <img
+              <Image
+                width={600}
+                height={600}
+                src="/assets/hero__code.png"
+                alt="Image"
+              />
+              {/* <img
                 src="/assets/hero__code.png"
                 alt=""
                 className="w-full h-full"
-              />
+              /> */}
             </div>
             <div className="flex-[0.1] relative">
-              <img
+              <Image
+                width={47}
+                height={74}
+                src="/assets/hero__blue__dots.png"
+                alt="Image2"
+                className="absolute top-32 right-0 "
+              />
+              {/* <img
                 src="/assets/hero__blue__dots.png"
                 alt=""
                 className="absolute top-32 right-0 object-contain"
-              />
+              /> */}
             </div>
           </div>
           <div className="bg-white ml-32 shadow-2xl mr-0 py-3 px-8 w-[45vmin] text-center">

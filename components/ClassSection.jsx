@@ -1,10 +1,18 @@
+import Image from "next/image";
 import React from "react";
 
 const ClassSection = () => {
   return (
     <div className="flex justify-center py-16 px-10">
       <div className="flex-[0.5] bg-class-bg bg-no-repeat">
-        <img src="/assets/class__img.png" alt="Image" className="mx-auto" />
+        <Image
+          width={420}
+          height={371}
+          src="/assets/class__img.png"
+          alt="Image"
+          className="mx-auto"
+        />
+        {/* <img src="/assets/class__img.png" alt="Image" className="mx-auto" /> */}
       </div>
       <div className="flex-[0.5]">
         <h1 className="text-[#1A202C] text-raleway text-3xl">

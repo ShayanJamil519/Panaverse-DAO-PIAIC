@@ -1,10 +1,18 @@
+import Image from "next/image";
 import React from "react";
 
 const Web3Section = () => {
   return (
     <div className="flex gap-10">
       <div className="flex-[0.5] bg-web3-bg bg-no-repeat">
-        <img src="/assets/web3__img.png" alt="Image" className="mx-auto" />
+        {/* <img src="/assets/web3__img.png" alt="Image" className="mx-auto" /> */}
+        <Image
+          width={500}
+          height={500}
+          src="/assets/web3__img.png"
+          alt="Image"
+          className="mx-auto"
+        />
       </div>
       <div className="flex-[0.5] pr-10">
         <h1 className="text-4xl font-raleway mb-6 mt-5 ">

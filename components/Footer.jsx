@@ -4,6 +4,7 @@ import { BsYoutube } from "react-icons/bs";
 import { FiInstagram } from "react-icons/fi";
 import { FaDiscord } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -12,7 +13,12 @@ const Footer = () => {
         {/* Left Container */}
         <div className="flex-[0.4]">
           <div className="mb-10">
-            <img src="/assets/footer__logo.png" alt="Panaverse Logo" />
+            <Image
+              width={172}
+              height={90}
+              src="/assets/footer__logo.png"
+              alt="Panaverse Logo"
+            />
           </div>
           <p className="font-nunito text-[#A2A2A2] mb-7 text-sm leading-6">
             The Future of the Web is Web 3.0, Metaverse, and Edge Computing.
@@ -82,7 +88,9 @@ const Footer = () => {
               className="bg-[#3E3E3E] rounded-md text-white py-2 px-3 outline-none border-none w-[70%]"
             />
             <div className="p-3 bg-[#48BB78] rounded-md">
-              <img
+              <Image
+                width={16}
+                height={16}
                 src="/assets/footer__email.png"
                 alt="Email Icon"
                 className="text-2xl"
@@ -112,7 +120,12 @@ const Footer = () => {
           </div>
           {/* Middle */}
           <div className="flex-[0.3] flex justify-start items-center gap-6">
-            <img src="/assets/footer__headphones.png" alt="Head Phones" />
+            <Image
+              width={44}
+              height={50}
+              src="/assets/footer__headphones.png"
+              alt="Head Phones"
+            />
             <div>
               <p className="font-nunito text-[#A2A2A2] ">
                 Have a question? Email me at:
@@ -128,7 +141,12 @@ const Footer = () => {
           {/* Right */}
           <div className="flex-[0.3]">
             <p className="text-white font-nunito  text-lg ml-1">Powered by:</p>
-            <img src="/assets/footer__panacloud.png" alt="Pana Cloud" />
+            <Image
+              width={100}
+              height={56}
+              src="/assets/footer__panacloud.png"
+              alt="Pana Cloud"
+            />
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const GoalsSection = () => {
@@ -26,14 +27,27 @@ const GoalsSection = () => {
       </div>
       <div className="flex-[0.5] flex flex-col">
         <div className="flex self-end">
-          <img
+          <Image
+            width={66}
+            height={60}
             src="/assets/goals__lines.png"
             alt="Image"
             className="flex flex-end"
           />
+          {/* <img
+            src="/assets/goals__lines.png"
+            alt="Image"
+            className="flex flex-end"
+          /> */}
         </div>
         <div>
-          <img src="/assets/goals__img.png" alt="Image" />
+          <Image
+            width={560}
+            height={374}
+            src="/assets/goals__img.png"
+            alt="Image"
+          />
+          {/* <img src="/assets/goals__img.png" alt="Image" /> */}
         </div>
       </div>
     </div>
