@@ -14,6 +14,16 @@ module.exports = {
       nunito: ["Nunito-Regular"],
       raleway: ["Raleway-Regular"],
     },
+    screens: {
+      smallerscreen: "465px",
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+    },
     backgroundImage: {
       "hero-blob": "url('/assets/hero__blob.png')",
       "hero-arrow": "url('/assets/hero__arrow.png')",

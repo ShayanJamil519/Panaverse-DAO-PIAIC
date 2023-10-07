@@ -3,8 +3,8 @@ import React from "react";
 
 const Web3Section = () => {
   return (
-    <div className="flex gap-10">
-      <div className="flex-[0.5] bg-web3-bg bg-no-repeat">
+    <div className="flex gap-10  md:flex-row  flex-col-reverse">
+      <div className=" sm:flex-[0.5] flex-1 bg-web3-bg bg-no-repeat">
         {/* <img src="/assets/web3__img.png" alt="Image" className="mx-auto" /> */}
         <Image
           width={500}
@@ -14,11 +14,11 @@ const Web3Section = () => {
           className="mx-auto"
         />
       </div>
-      <div className="flex-[0.5] pr-10">
+      <div className="sm:flex-[0.5] px-4 flex-1 pr-10 flex flex-col items-center">
         <h1 className="text-4xl font-raleway mb-6 mt-5 ">
           What is Web <span className="pt-5 text-[#145CEB] ">3.0</span>
         </h1>
-        <p className="font-nunito text-[#575757] leading-7">
+        <p className="font-nunito text-[#575757] leading-7 text-center md:text-left">
           Web 3.0 has the potential to change the internet as we know it
           forever. You're still early in catching the trend and building your
           first blockchain application, acquiring the skills to get a high-

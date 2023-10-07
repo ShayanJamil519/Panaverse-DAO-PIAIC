@@ -4,7 +4,7 @@ import { eventsData } from "./data";
 
 const UserEngagement = () => {
   return (
-    <div className="bg-[#EDEEF3] w-full flex py-20 px-8 gap-8">
+    <div className="bg-[#EDEEF3] w-full flex-col lg:flex-row flex py-20 px-8 gap-8">
       <Events />
       <Feedback />
     </div>
@@ -28,7 +28,7 @@ const Event = ({ event }) => {
   const { date, year, name, time, location } = event;
 
   return (
-    <div className="flex gap-5 mb-5">
+    <div className="flex smallerscreen:flex-row flex-col gap-5 mb-5">
       {/* Left Container */}
       <div className="flex-[0.1] text-center">
         <h1 className="bg-[#145CEB] text-white text-4xl py-2 px-8  font-raleway">
